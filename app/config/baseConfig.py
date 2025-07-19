@@ -37,10 +37,13 @@ class Config:
 
 class DevelopmentConfig(Config):
     # mongodb 配置
-    # MONGODB_SETTINGS = {
+    MONGODB_SETTINGS = {
     #     'db': 'questionnaire-test-new',
-    #     'host': 'mongodb://localhost/questionnaire-test-new'
-    #}
+         'host': 'mongodb+srv://sggsggsggsgg8:pexUgEVdPiVV1iU2@sggsggsgg.kzbxyvq.mongodb.net/?retryWrites=true&w=majority&appName=sggsggsgg'
+    }
+
+    # mongodb+srv://sggsggsggsgg8:pexUgEVdPiVV1iU2@sggsggsgg.kzbxyvq.mongodb.net/?retryWrites=true&w=majority&appName=sggsggsgg
+    # pexUgEVdPiVV1iU2
 
     # 开发环境下web端的url
     WEB_BASE_URL = "http://127.0.0.1:80"
