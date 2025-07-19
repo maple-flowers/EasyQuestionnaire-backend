@@ -46,7 +46,7 @@ class DevelopmentConfig(Config):
     # pexUgEVdPiVV1iU2
 
     # 开发环境下web端的url
-    WEB_BASE_URL = "http://127.0.0.1:80"
+    WEB_BASE_URL = "http://0.0.0.0:5001"
 
 
 class ProductionConfig(Config):
