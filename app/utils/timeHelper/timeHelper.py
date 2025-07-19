@@ -22,7 +22,7 @@ def checkTimeIsDead(obj):
 
 def switchTimeFromTick(tick):
     numberTick = int(tick)
-    if len(tick) is not 10:
+    if len(tick) != 10:
         numberTick /= 1000
     timeArray = time.localtime(numberTick)
     nowTime = time.strftime("%Y-%m-%d", timeArray)
