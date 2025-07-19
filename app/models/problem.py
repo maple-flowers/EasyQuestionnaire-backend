@@ -57,7 +57,7 @@ class Problem(db.Document):
         # 填空题
         if self.type == "BLANK_FILL":
             for r in res:
-                if len(r.resolution) is 0:
+                if len(r.resolution) == 0:
                     continue
                 optionRes.append(r.resolution[0])
 
