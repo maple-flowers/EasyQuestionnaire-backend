@@ -50,7 +50,7 @@ def pushWJWDataToDB():
                 failedNum += 1
                 continue
             # 最新数据 并且生效写入数据库了
-            if successNum is 1:
+            if successNum == 1:
                 info.renewNewestLink(0, currentLink)
         sendSuccessEmail(successNum, failedNum)
 
