@@ -65,7 +65,7 @@ class Problem(db.Document):
         if self.type == "SINGLE_SELECT" or self.type == "DROP_DOWN":
             optionRes = self.options
             for r in res:
-                if len(r.resolution) is 0:
+                if len(r.resolution) == 0:
                     continue
                 pos = int(r.resolution[0])
                 if 'resolution' not in optionRes[pos]:
@@ -77,7 +77,7 @@ class Problem(db.Document):
         if self.type == "MULTIPLY_SELECT":
             optionRes = self.options
             for r in res:
-                if len(r.resolution) is 0:
+                if len(r.resolution) == 0:
                     continue
                 for pos in r.resolution:
                     pos = int(pos)
@@ -96,7 +96,7 @@ class Problem(db.Document):
                     "resolution": 0
                 })
             for r in res:
-                if len(r.resolution) is 0:
+                if len(r.resolution) == 0:
                     continue
                 score = r.resolution[0]
                 optionRes[score]["resolution"] += 1
