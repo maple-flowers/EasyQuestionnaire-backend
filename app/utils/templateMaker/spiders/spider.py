@@ -16,9 +16,9 @@ class Spider:
 
     def runSpider(self, method='get', data=None, needSoup=True, manager='html5lib'):
         try:
-            if method is 'get':
+            if method == 'get':
                 self.response = requests.get(url=self.url, headers=self.headers)
-            elif method is 'post':
+            elif method == 'post':
                 self.response = requests.post(url=self.url, data=data, headers=self.headers)
         except Exception as e:
             print(e)
